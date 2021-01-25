@@ -147,6 +147,7 @@ const HeadlineInner = styled.div`
   @media ${device.laptop} {
     & img {
       width: auto;
+      height: 90%;
     }
   }
 `;
@@ -477,7 +478,7 @@ const Index = () => {
           <Input value={company} onChange={(e) => setCompany(e.target.value)} placeholder='Компания' />
           <ConsentRow>
             <Checkbox type='checkbox' id='consent' name='consent' value='Aggree' onClick={() => { setAggreed(!aggreed) }} />
-            <p>Я принимаю Условия Пользовательского соглашения и даю свое согласие на обработку моей персональной информации на условиях определенных <a href={process.env.PUBLIC_URL + '/policy.pdf'} rel='noreferrer' target='_blank'>Политикой конфиденциальности</a></p>
+            <p>Я принимаю Условия Пользовательского соглашения и даю свое согласие на обработку моей персональной информации на условиях определенных <a href={process.env.PUBLIC_URL + '/policy.pdf'} rel='noreferrerw' target='_blank'>Политикой конфиденциальности</a></p>
           </ConsentRow>
           <br />
           <br />
